@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="The homepage for WDD231 containing an about me, photo, and links to web certificate courses and social
+        media.">
+    <meta name="author" content="Alyssa Stringham">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <title>Home</title>
 </head>
+
 <body>
-    
+    <header>
+        <!--contains SVG logo, site name, hamburger button (mobile)-->
+        <img src="images/house-fill.svg" alt="site logo" width="1" height="1">
+        <!--can do width = "1" height = "1" because they are the same number; also ensures image doesn't take up space in header-->
+        <span>Alyssa's Website</span>
+        <button id="ham-btn" class="hamburger"></button> <!--Id for JavaScript; class for CSS-->
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <!--allows you to visually change list item to implement Wayfinding-->
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Some information about me which I will add later. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit.
+                Perferendis architecto id quasi nulla rem eligendi incidunt pariatur dolorem laboriosam nam accusamus
+                quod
+                obcaecati, debitis dolor alias numquam dolorum distinctio amet.</p>
+        </section>
+        <section class="picture">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Alyssa Profile Picture" height="200">
+        </section>
+        <section class="webCert">
+            <h2>Web Certificate Courses</h2>
+            <section class="webButtons">
+                <button id="allCourses" class="allCourses">All</button>
+                <button id="wddCourses" class="wddCourses">WDD</button>
+                <button id="cseCourses" class="cseCourses">CSE</button>
+
+            </section>
+            <p id="courses" class="courses"></p>
+            <p id="credits"></p>
+        </section>
+    </main>
+    <footer>
+        <!--Create parent division for social media icons; lay out horizontally using flexbox; 
+        control space between icons using column gaps; center on page using justify-content-->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alyssa-stringham-467979206/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/Alyssa-Stringham" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com/alyssa.stringham.3/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
+
 </html>

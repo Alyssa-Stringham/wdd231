@@ -1,0 +1,76 @@
+/*media query first -- contain all code inside */
+@media only screen and (min-width:38rem)
+/*about 608px*/
+
+    {
+
+    /*fairly standard*/
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+        /*centers*/
+    }
+
+    .header {
+        grid-template-columns: 24px auto;
+        /*removes third unnecessary comments*/
+    }
+
+    .hamburger {
+        display: none;
+        /*still space in header if only .hamburger*/
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--gray);
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+
+    h1 {
+        grid-column: span 3;
+    }
+
+    .about {
+        grid-column: span 2;
+    }
+
+    .picture img {
+        padding: 5px;
+    }
+
+    .webCert {
+        grid-column: span 3;
+    }
+
+    .webCert h2 {
+        justify-content: space-evenly;
+    }
+
+    .webCert p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .webCert section {
+        width: 250px;
+    }
+}

@@ -1,0 +1,198 @@
+/*Site header 320px to 1600px */
+/*Use CSS grid for header spacing */
+/*set up hamburger button first, then code to change visibility*/
+
+/* Add colors and font*/
+* {
+    /* font family*/
+    box-sizing: border-box;
+    --blue: #356c83;
+    --darkblue: #3e4756;
+    --gold: #dda11d;
+    --lightblue: #ddf2ff;
+    --gray: #c4cee0;
+    color: var(--darkblue);
+}
+
+/**********HEADER**********/
+header {
+    display: grid;
+    /* display left to right*/
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    /* have bottom edge of site title and logo line up*/
+    align-items: end;
+    border-bottom: solid 1px var(--gray);
+    /*fix spacing between logo and site title*/
+    column-gap: 8px;
+}
+
+header img {
+    /* images inline by default*/
+    display: block;
+    width: 100%;
+    /* of container*/
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+/********* NAVIGATION**********/
+.hamburger {
+    /*removes gray color behind lines*/
+    background: none;
+    border: none;
+    /* add cursor as pointer -- indicates clickable item*/
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*may want to change font later -- Verdana on most computers*/
+}
+
+/* Pseudo class*/
+.hamburger::before {
+    /*insert content/ hamburger button*/
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    /*ul comes with default padding and margins*/
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .85rem 10px;
+    /*check to make sure size is large enough*/
+    text-decoration: none;
+    border-bottom: solid 1px var(--gray);
+}
+
+/**********WAYFINDING**********/
+.navigation li.current {
+    background-color: var(--lightblue);
+}
+
+.navigation a:hover {
+    background-color: var(--blue);
+    color: var(--lightblue);
+}
+
+
+/**********BODY**********/
+main {
+    display: grid;
+
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h2 {
+    display: grid;
+    justify-items: center;
+}
+
+.about {
+    margin-left: 10px;
+}
+
+.picture {
+    justify-self: center;
+}
+
+/**********COURSES**********/
+.webCert {
+    justify-items: center;
+}
+
+.webCert button {
+    height: 44px;
+    background-color: var(--lightblue);
+    border: 1px solid var(--darkblue);
+    border-radius: 4px;
+}
+
+.webCert section {
+    display: flex;
+    background-color: var(--gray);
+    border: 1px solid var(--darkblue);
+    width: 200px;
+    justify-content: center;
+    margin: 8px;
+}
+
+.webCert .webButtons {
+    justify-content: space-evenly;
+    background-color: white;
+    border: none;
+}
+
+.webCert .true {
+    background-color: var(--lightblue);
+}
+
+.webCert .true p {
+    color: var(--darkblue);
+}
+
+.webCert p {
+    margin-left: 5px;
+    color: black;
+}
+
+/**********FOOTER**********/
+footer {
+    background-color: var(--lightblue);
+
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    /*aligns icons left to right*/
+    justify-content: center;
+    /*good design to include column gap between touch elements*/
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+    /*display block stacks icons; flex allows inner alignment*/
+    justify-content: center;
+    /*centers left to right*/
+    align-items: center;
+    /*centers top to bottom*/
+    border: 1px solid var(--darkblue);
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--blue);
+}
