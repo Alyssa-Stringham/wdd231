@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Bob's Bikes",
+            "address": "123 Williams Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)875-1234",
+            "website": "bobsbikes.com",
+            "image": "images/bike.jpg",
+            "membershipNum": "1",
+            "membership": "member"
+        },
+        {
+            "name": "Dollar Store",
+            "address": "418 South Elm Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)548-9400",
+            "website": "dolloarstore_jonesville.com",
+            "image": "images/grocery.jpg",
+            "membershipNum": "1",
+            "membership": "member"
+        },
+        {
+            "name": "Jonesville Family Dentistry",
+            "address": "4882 West State Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)567-3421",
+            "website": "jonesvillefamilydentistry.com",
+            "image": "images/tooth.jpg",
+            "membershipNum": "2",
+            "membership": "silver"
+        },
+        {
+            "name": "Sharp Cuts Salon",
+            "address": "820 North Elm Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)412-5804",
+            "website": "sharpcutssalon.com",
+            "image": "images/salon.jpg",
+            "membershipNum": "3",
+            "membership": "gold"
+        },
+        {
+            "name": "See Right Glasses",
+            "address": "943 West Center Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)593-1940",
+            "website": "seerightglasses.com",
+            "image": "images/glasses.jpg",
+            "membershipNum": "2",
+            "membership": "silver"
+        },
+        {
+            "name": "Bakery in Jonesville",
+            "address": "1183 East State Street Jonesville, Utah, United States 012300",
+            "phone": "1-(800)384-9451",
+            "website": "bakeryinjonesville.com",
+            "image": "images/cupcake.jpg",
+            "membershipNum": "3",
+            "membership": "gold"
+        },
+        {
+            "name": "Holly's Home Goods",
+            "address": "432 West Oak Lane Jonesville, Utah, United States 012300",
+            "phone": "1-(800)385-2048",
+            "website": "hollyshomegoods.com",
+            "image": "images/lamp.jpg",
+            "membershipNum": "1",
+            "membership": "member"
+        }
+    ]
+}

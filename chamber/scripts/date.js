@@ -1,0 +1,3 @@
+const today = new Date();
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;

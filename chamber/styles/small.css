@@ -1,0 +1,172 @@
+/*Must be responsive fom 320px to wider views without horizontal scrolling*/
+/*Responsive main navigation must support pages listed in site plan*/
+
+* {
+    --fontColor: #2c3e50;
+    --primaryColor: #34495e;
+    --secondaryColor: #7f8c8d;
+    --lightColor: #ecf0f1;
+    --extraColor: #bdc3c7;
+    /*Font family*/
+    color: var(--fontColor);
+}
+
+/*********HEADER*********/
+header {
+    display: grid;
+    grid-template-columns: 20px auto 40px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid var(--fontColor);
+    column-gap: 10px;
+    font-size: larger;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+/*********NAVIGATION*********/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: .75rem 10px;
+    border-bottom: 1px solid var(--secondaryColor);
+}
+
+.navigation li.current {
+    background-color: var(--lightColor);
+}
+
+.navigation a:hover {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+}
+
+/*********MAIN*********/
+
+
+/*********FOOTER*********/
+footer {
+    background-color: var(--lightColor);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+/*********SOCIAL*********/
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.social a:hover {
+    background-color: var(--secondaryColor);
+}
+
+
+/*Grid/ List View*/
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+    }
+}
+
+section {
+    border: 1px solid var(--primaryColor);
+    padding: 0.5rem;
+    background-color: var(--lightColor);
+
+    a {
+        font-size: 0.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    margin-bottom: 16px;
+
+    section {
+        text-align: center;
+        height: 250px;
+
+
+        &>* {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: 1px solid var(--primaryColor);
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 0;
+        padding: 0.25rem;
+    }
+}
