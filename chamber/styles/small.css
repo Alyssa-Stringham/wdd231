@@ -116,25 +116,20 @@ footer {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
+}
 
-    button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-    }
+.menu button {
+    padding: 0.5rem 1rem;
 }
 
 section {
     border: 1px solid var(--primaryColor);
     padding: 0.5rem;
     background-color: var(--lightColor);
+}
 
-    a {
-        font-size: 0.75rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
+section a {
+    font-size: 0.75rem;
 }
 
 .grid {
@@ -143,30 +138,26 @@ section {
     grid-gap: 5px;
     align-items: center;
     margin-bottom: 16px;
-
-    section {
-        text-align: center;
-        height: 250px;
+}
 
 
-        &>* {
-            margin: 0.1rem;
-        }
-    }
+.grid section {
+    text-align: center;
+    height: 250px;
+}
 
-    img {
-        border: 1px solid var(--primaryColor);
-    }
+.grid img {
+    border: 1px solid var(--primaryColor);
 }
 
 .list {
     display: flex;
     flex-direction: column;
+}
 
-    section {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        margin: 0;
-        padding: 0.25rem;
-    }
+.list section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0.25rem;
 }
