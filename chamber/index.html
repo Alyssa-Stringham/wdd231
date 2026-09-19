@@ -19,6 +19,7 @@
     <!-- META PROPERTY OG DESCRIPTION, TITLE, IMAGE, URL-->
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/filtered-members.js" defer></script>
     <title>Home</title>
 </head>
 
@@ -46,7 +47,7 @@
         </section>
         <section class="events">
             <h2>Current Events</h2>
-            <p>Check back soon for upcoming events</p>
+            <p>Check back soon for upcoming events!</p>
         </section>
         <section class="weather">
             <h2>Weather</h2>
@@ -58,10 +59,11 @@
                     <figcaption></figcaption>
                 </figure>
             </div>
-            <div id="forecast"></div>
+            <div id="forecast" class="forecast"></div>
         </section>
         <section>
             <h2>Company Spotlights</h2>
+
             <!--Use JSON data source of chamber members display using fetch method
                 and async/ await functionality 
                 display 2-3 members
@@ -69,7 +71,7 @@
                 randomly load spotlights each time page is rendered
                 display company name, logo, phone, address, website, and membership level -->
         </section>
-
+        <article id="members" class="grid"></article>
         <!-- Scalable hero image using img tag-->
         <!-- Call to action link to join chamber of commerce 
                 in ex CTA is button/ link over hero image-->

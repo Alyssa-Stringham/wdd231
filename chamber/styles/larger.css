@@ -45,4 +45,16 @@
         margin: 0;
         justify-self: left;
     }
+
+    .forecast {
+        column-gap: 20px;
+        justify-content: space-evenly;
+        margin-top: none;
+    }
+
+    .forecast div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 175px;
+    }
 }

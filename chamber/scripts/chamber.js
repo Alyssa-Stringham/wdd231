@@ -73,7 +73,7 @@ function displayForecast(dataFore) {
         fcDay.textContent = nextdaystring;
         // need to get different for each new day
         if (dataFore.list[4]) {
-            fcTemp.innerHTML = dataFore.list[4].main.temp
+            fcTemp.innerHTML = `${dataFore.list[4].main.temp} &deg; F`
             const fcIconSrc = `https://openweathermap.org/img/wn/${dataFore.list[4].weather[0].icon}.png`
             fcIcon.setAttribute('SRC', fcIconSrc);
             fcIcon.setAttribute('alt', dataFore.list[4].weather[0].description);
@@ -81,8 +81,9 @@ function displayForecast(dataFore) {
         }
         fcIconFig.appendChild(fcIcon);
         forecast.appendChild(fcDay);
+        forecast.appendChild(fcIconFig);        
         forecast.appendChild(fcTemp);
-        forecast.appendChild(fcIconFig);
+
         forecast.appendChild(fcDesc);
 
         forecasts.appendChild(forecast);

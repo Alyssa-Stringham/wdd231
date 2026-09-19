@@ -1,5 +1,5 @@
 const url = 'data/members.json';
-const cards = document.querySelector('#members');
+const displayed = document.querySelector('#members');
 
 async function getMemberData() {
     const response = await fetch(url);
@@ -34,26 +34,10 @@ const displayMembers = (companies) => {
         card.appendChild(phone);
         card.appendChild(website);
 
-        cards.appendChild(card);
+
+        displayed.appendChild(card);
 
     });
 }
 
 getMemberData();
-
-
-const gridbtn = document.querySelector("#grid");
-const listbtn = document.querySelector("#list");
-const display = document.querySelector("article");
-
-gridbtn.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-listbtn.addEventListener("click", showList);
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
