@@ -8,9 +8,8 @@ const lat = "40.05"
 const long = "-111.67"
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${myKey}&units=imperial`
 
-const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#temperature');
-const captionDesc = document.querySelector('figcaption');
+const weatherFigElmt = document.querySelector('#weatherFig');
 
 const forecastList = document.querySelector('#forecast');
 
@@ -31,10 +30,15 @@ async function apiFetch() {
 
 function displayWeather(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`
-    captionDesc.innerHTML = data.weather[0].description
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    let weatherIcon = document.createElement('img')
+    let captionDesc = document.createElement('figcaption')
     weatherIcon.setAttribute('SRC', iconsrc)
     weatherIcon.setAttribute('alt', data.weather[0].description)
+    weatherFigElmt.appendChild(weatherIcon)
+    captionDesc.innerHTML = data.weather[0].description
+    weatherFigElmt.appendChild(captionDesc)
+
 }
 
 const urlFore = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${myKey}&units=imperial`
