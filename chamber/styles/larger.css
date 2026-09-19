@@ -49,7 +49,7 @@
     .forecast {
         column-gap: 20px;
         justify-content: space-evenly;
-        margin-top: none;
+        margin-top: 0;
     }
 
     .forecast div {

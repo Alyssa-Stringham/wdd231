@@ -221,10 +221,6 @@ section a {
     justify-content: center;
 }
 
-.weather {
-    justify-items: space-evenly;
-}
-
 .weatherNow h3,
 p {
     width: 100%;
