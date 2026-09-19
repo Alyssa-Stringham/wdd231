@@ -1,1 +1,103 @@
 <!--Attention grabbing information along with community information, weather, calls to action, business spotlights-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alyssa Stringham">
+    <meta name="description" content="The home page for the chamber project. I will update this later.">
+    <meta name="title" content="Home">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- META PROPERTY OG DESCRIPTION, TITLE, IMAGE, URL-->
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <img src="favicon.ico" alt="site logo" height="1" width="1">
+        <span>Jonesville Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Jonesville Chamber of Commerce Home</h1>
+        <figure class="hero">
+            <img src="images/commerceHero.webp" alt="Three People in a Business Meeting">
+        </figure>
+        <section class="cta">
+            <p>Call to action </p>
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Check back soon for upcoming events</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weatherNow">
+                <h3>Today</h3>
+                <p>It is <span id="temperature"></span> in Jonesville today. </p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="forecast"></div>
+        </section>
+        <section>
+            <h2>Company Spotlights</h2>
+            <!--Use JSON data source of chamber members display using fetch method
+                and async/ await functionality 
+                display 2-3 members
+                must be gold or silver members
+                randomly load spotlights each time page is rendered
+                display company name, logo, phone, address, website, and membership level -->
+        </section>
+
+        <!-- Scalable hero image using img tag-->
+        <!-- Call to action link to join chamber of commerce 
+                in ex CTA is button/ link over hero image-->
+        <!-- Current event(s) section-->
+
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>City Chamber of Commerce</h3>
+            <p>123 Oak Street</p>
+            <p>City State Zip</p>
+            <p>email@address.org</p>
+            <p>1-000-123-4567</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alyssa-stringham-467979206/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/Alyssa-Stringham" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com/alyssa.stringham.3/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+        </div>
+        <div class="publish">
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
