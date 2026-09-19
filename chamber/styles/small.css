@@ -24,8 +24,8 @@ header {
 
 header img {
     display: block;
-    width: 100%;
-    height: auto;
+    height: 20px;
+    width: 20px;
     padding-bottom: 4px;
 }
 
@@ -77,7 +77,9 @@ header img {
 }
 
 /*********MAIN*********/
-
+h1 {
+    text-align: center;
+}
 
 /*********FOOTER*********/
 footer {
@@ -143,11 +145,13 @@ section a {
 
 .grid section {
     text-align: center;
-    height: 250px;
+    height: 300px;
 }
 
 .grid img {
     border: 1px solid var(--primaryColor);
+    height: 50px;
+    width: auto;
 }
 
 .list {
@@ -162,27 +166,38 @@ section a {
     padding: 0.25rem;
 }
 
+.list img {
+    display: none;
+    height: 10px;
+    width: auto;
+}
+
+
+
+
 /* HOME PAGE*/
 
 .forecast {
-    justify-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .forecast div {
-    border: 1px solid black;
-    background-color: var(--primaryColor);
+    border: 3px solid var(--primaryColor);
     justify-items: center;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     width: 100%;
 }
 
-.forecast h3,
 .forecast p {
-    color: var(--lightColor);
+    color: var(--primaryColor);
     padding: 0 10px;
+}
+
+.forecast h3 {
+    color: var(--primaryColor);
 }
 
 
@@ -199,16 +214,25 @@ section a {
     border: 3px solid var(--primaryColor);
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
 }
 
-.weatherNow h3 {
+.weather {
+    justify-items: space-evenly;
+}
+
+.weatherNow h3,
+p {
     width: 100%;
-    margin-left: 10px;
+    text-align: center;
 }
 
-.weatherNow p {
-    margin-left: 10px;
-    width: 65%;
+h2 {
+    text-align: center;
 }
 
 .hero {
@@ -218,4 +242,13 @@ section a {
 
 .hero img {
     max-width: 100%;
+}
+
+.cta a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.cta a:hover {
+    text-decoration: underline;
 }

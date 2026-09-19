@@ -26,7 +26,6 @@ const displayMembers = (companies) => {
         image.setAttribute('src', company.image);
         image.setAttribute('alt', `Logo of ${company.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '50');
 
         card.appendChild(image);
         card.appendChild(companyName);

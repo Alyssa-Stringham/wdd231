@@ -7,7 +7,7 @@
             "website": "bobsbikes.com",
             "image": "images/bike.jpg",
             "membershipNum": "1",
-            "membership": "member"
+            "membership": "Member"
         },
         {
             "name": "Dollar Store",
@@ -16,7 +16,7 @@
             "website": "dolloarstore_jonesville.com",
             "image": "images/grocery.jpg",
             "membershipNum": "1",
-            "membership": "member"
+            "membership": "Member"
         },
         {
             "name": "Jonesville Family Dentistry",
@@ -25,7 +25,7 @@
             "website": "jonesvillefamilydentistry.com",
             "image": "images/tooth.jpg",
             "membershipNum": "2",
-            "membership": "silver"
+            "membership": "Silver"
         },
         {
             "name": "Sharp Cuts Salon",
@@ -34,7 +34,7 @@
             "website": "sharpcutssalon.com",
             "image": "images/salon.jpg",
             "membershipNum": "3",
-            "membership": "gold"
+            "membership": "Gold"
         },
         {
             "name": "See Right Glasses",
@@ -43,7 +43,7 @@
             "website": "seerightglasses.com",
             "image": "images/glasses.jpg",
             "membershipNum": "2",
-            "membership": "silver"
+            "membership": "Silver"
         },
         {
             "name": "Bakery in Jonesville",
@@ -52,7 +52,7 @@
             "website": "bakeryinjonesville.com",
             "image": "images/cupcake.jpg",
             "membershipNum": "3",
-            "membership": "gold"
+            "membership": "Gold"
         },
         {
             "name": "Holly's Home Goods",
@@ -61,7 +61,7 @@
             "website": "hollyshomegoods.com",
             "image": "images/lamp.jpg",
             "membershipNum": "1",
-            "membership": "member"
+            "membership": "Member"
         }
     ]
 }

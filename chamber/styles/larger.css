@@ -56,5 +56,12 @@
         display: flex;
         flex-wrap: wrap;
         width: 175px;
+        justify-content: center;
+    }
+
+    .forecast h3,
+    p {
+        width: 100%;
+        text-align: center;
     }
 }
