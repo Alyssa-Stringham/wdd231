@@ -1,3 +1,149 @@
 <!--contains information abou the benefit of joining the chamber and a membership application form 
 Three membership level options: non-profit, silver, gold
 Different levels have different perks including directory listings, publications, trainings, social media work, luncheons, sponsorships, advertising, etc. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alyssa Stringham">
+    <meta name="description" content="The home page for the chamber project. I will update this later.">
+    <meta name="title" content="Home">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- META PROPERTY OG DESCRIPTION, TITLE, IMAGE, URL-->
+    <meta property="og:title" content="Jonesville Commerce Join">
+    <meta property="og:description"
+        content="The join page for a commerce website for the fictional city of Jonesville, Utah">
+    <meta property="og:image" content="https://alyssa-stringham.github.io/wdd231/chamber/join.html">
+    <meta property="og:url" content="https://alyssa-stringham.github.io/wdd231/chamber/join.html">
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/join.js" defer></script>
+    <title>Chamber Join Page</title>
+</head>
+
+<body>
+    <header>
+        <img src="favicon.ico" alt="site logo" height="32" width="32">
+        <span>Jonesville Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <h1>Join</h1>
+        <!--Use a form with a get method and action that points to confirmation page named thankyou.html-->
+        <section class="form">
+            <h2>New Membership Form</h2>
+            <form method="get" action="thankyou.html" class="joinForm">
+                <fieldset>
+                    <legend>Your Information*</legend>
+                    <label>First Name <input autocomplete="given-name" type="text" name="first" id="first"
+                            required></label>
+                    <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last"
+                            required></label>
+
+                    <label>Email <input autocomplete="email" type="text" name="email" id="email" required
+                            placeholder="email@address.com"></label>
+                    <label>Phone Number <input autocomplete="tel-area-code" type="text" name="phone" id="phone" required
+                            placeholder="000-123-4567"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Organization Title: <input type="text" name="orgTitle" placeholder="DON'T FORGET"></label>
+                    <label>Description: <textarea type="textarea" name="busiDesc"></textarea></label>
+                    <div class="radio">
+                        <label>Membership Level:</label>
+                        <label><input type="radio" name="membership" value="np">Non-Profit</label>
+                        <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                        <label><input type="radio" name="membership" value="silver">Silver</label>
+                        <label><input type="radio" name="membership" value="gold">Gold</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Join Jonesville Chamber of Commerce">
+            </form>
+        </section>
+
+        <section class="membership">
+            <h2>Membership Levels</h2>
+            <p id="memLevels"></p>
+        </section>
+        <dialog id="membership">
+            <div class="dialogHead">
+                <h3 id="dialogHead"></h3>
+                <button id="closeDialog" class="close-button">X</button>
+            </div>
+            <div class="dialogInfo">
+                <p id="memberBenefits"></p>
+                <p id="memberCost"></p>
+            </div>
+
+        </dialog>
+        <!--Each field element, including textarea, should be encased in label tag to support accessibility -->
+        <!--Form Fields
+            applicant's first name (text type, required, name, title, and correct autocomplete value so field autofills with the first name)
+            applicant's last name (same requirements as first)
+            applicant's organizational title (text type, name, title, autocomplete value of 'organization-title' and pattern to only accept alpha characters, hyphens, and spaces with min. 7 characters using regular expression)
+            email address (email type, required, name, title, correct autocomplete value, and appropriate placeholder)
+            mobile number (text type, required, name, title, correct autocomplete value of "organization")
+            membership level selection using appropriate form field of your choosing to allow user to select membership level; four membership levels; required option values provided after each in parentheses
+                NP Membership is for non-profit organizations and no fee (np)
+                Bronze Membership (bronze)
+                Silver Membership (silver)
+                Gold Membership (gold)
+            business/ organization's description (text area, title, name)
+            timestamp (hidden type, name, and id); field contains current date and time that form was loaded by user
+            form submission button (input type submit properly labeled in text node of button)-->
+        <!--Build 4 different cards to display the membership level titles and link to get additional information
+                on small screen - displayed below form
+                larger screens - displayed to right of form
+                Use 4 HTML modals to display the benefits of each membership level
+                    should display when user clicks link on each card (see examples)
+                    membership levels have increasing costs and benefits per level
+                    ex. of potential benefits: special events, training, advertising (spotlight on homepage), event discounts, etc.-->
+        <!--Incorporate animation/ transition into initial display of 4 different membership level cards or buttons 
+                (ex. change color over time, change opacity, change margin, etc)
+                goal is to draw attention to membership cards without being overly distracting (see example)-->
+        <!--create thankyou.html page - expresses gratitude for filling out form; should load when user successfully submitted form
+                display form information entered by user for all 'required' form fields (first name, last name, email, mobile number, business name, current date timestamp from hidden field)-->
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>City Chamber of Commerce</h3>
+            <p>123 Oak Street</p>
+            <p>City State Zip</p>
+            <p>email@address.org</p>
+            <p>1-000-123-4567</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alyssa-stringham-467979206/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/Alyssa-Stringham" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com/alyssa.stringham.3/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+        </div>
+        <div class="publish">
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

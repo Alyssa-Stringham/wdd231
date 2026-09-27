@@ -176,7 +176,7 @@ section a {
 
 
 
-/* HOME PAGE*/
+/********* HOME PAGE*********/
 
 .forecast {
     display: flex;
@@ -248,4 +248,124 @@ h2 {
 
 .cta a:hover {
     text-decoration: underline;
+}
+
+/*********JOIN*********/
+
+.membership {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: none;
+}
+
+.membership h2 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid var(--fontColor);
+    padding-bottom: 5px;
+}
+
+.membership p {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.membership button:hover {
+    color: var(--lightColor);
+    background-color: var(--primaryColor);
+}
+
+.membership section {
+    margin-bottom: 10px;
+
+}
+
+/*********FORM*********/
+
+.form {
+    background-color: white;
+    border: none;
+}
+
+.joinForm {
+    border: 2px solid var(--primaryColor);
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.joinForm legend {
+    padding: 10px;
+}
+
+.joinForm input[type="text"],
+input[type="tel"],
+input[type="email"],
+.joinForm textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--primaryColor);
+    margin-bottom: 5px;
+}
+
+.joinForm input[type="submit"] {
+    max-width: 80%;
+    min-width: 275px;
+    display: flex;
+    justify-self: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.joinForm input[type="submit"]:hover {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+}
+
+.joinForm input:required {
+    border-bottom: solid var(--primaryColor)2px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+}
+
+.joinForm input[type="radio"] {
+    margin-left: 10px;
+}
+
+/*********MODAL*********/
+/*should be below form */
+.membership {
+    display: flex;
+}
+
+.dialogHead {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed var(--primaryColor);
+}
+
+.dialogHead button {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    align-self: flex-start;
+}
+
+.dialogInfo p {
+    justify-items: left;
+    text-align: left;
+}
+
+.dialogInfo li {
+    margin-left: 20px;
 }

@@ -197,3 +197,20 @@ footer {
 .social a:hover {
     background-color: var(--blue);
 }
+
+dialog {
+    background-color: var(--gray);
+    border: 1px solid var(--darkblue);
+    width: 80%;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+::backdrop {
+    background-color: var(--verylightgray 50%);
+}
+
+dialog button {
+    padding: 8px;
+    border: 1px solid var(--darkblue);
+}

@@ -64,4 +64,20 @@
         width: 100%;
         text-align: center;
     }
+
+    /*Modal should be to right of form*/
+
+    .join {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 quto;
+    }
+
+    .join h1 {
+        grid-column: span 2;
+    }
+
+    .membership h2 {
+        border: none;
+    }
 }

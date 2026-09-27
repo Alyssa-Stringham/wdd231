@@ -91,8 +91,23 @@ const courses = [
 //Provide the total number of credits required dynamically by using a reduce function
 // the number of credits shown should reflect just the courses currently being displayed
 let courseCredits = 0;
-createCourseCard(courses);
+//id show here === id courses
+//id mydialog === id course-details
 
+const showCourses = document.querySelector('#courses');
+const myDialog = document.querySelector('#course-details');
+const dialogTitle = document.querySelector('#course-details div h2');
+const closeDialog = document.querySelector('#course-details button');
+const courseTitle = document.querySelector('#course-details h3')
+const courseModalCredits = document.querySelector('#modalCredits');
+const courseCert = document.querySelector('#modalCert');
+const courseDesc = document.querySelector('#modalDesc');
+const courseTech = document.querySelector('#modalTech');
+
+//modal.showModal(); //defaul to show modal
+closeDialog.addEventListener("click", () => myDialog.close());
+
+createCourseCard(courses);
 
 document.querySelector("#credits").innerHTML = `The total credits for the courses listed above is <strong> ${courseCredits} </strong> `;
 
@@ -111,9 +126,9 @@ cseCourses.addEventListener("click", () => {
     createCourseCard(courses.filter(course => course.subject == "CSE"));
 })
 
-
 function createCourseCard(filteredCourses) {
     document.querySelector(".courses").innerHTML = "";
+    console.log(filteredCourses)
     filteredCourses.forEach(course => {
         let card = document.createElement("section");
         let subject = document.createElement("p");
@@ -128,7 +143,19 @@ function createCourseCard(filteredCourses) {
 
         courseCredits += course.credits;
 
+        card.addEventListener('click', () => displayCourseInfo(course));
+        showCourses.appendChild(card);
         document.querySelector(".courses").appendChild(card);
-
     });
 }
+
+function displayCourseInfo(course) {
+    myDialog.showModal();
+    dialogTitle.innerHTML = `${course.subject} ${course.number}`
+    courseTitle.innerHTML = course.title
+    courseModalCredits.innerHTML = `${course.credits} Credits`
+    courseCert.innerHTML = `Certificate: ${course.certificate}`
+    courseDesc.innerHTML = course.description
+    //probably need to do a forEach loop to display the technology?
+}
+//displayCourseDetails(courses) // send course information to function here 
