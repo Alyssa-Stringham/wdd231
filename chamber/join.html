@@ -8,7 +8,8 @@ Different levels have different perks including directory listings, publications
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alyssa Stringham">
-    <meta name="description" content="The home page for the chamber project. I will update this later.">
+    <meta name="description"
+        content="This page contains a form for new members to join the Jonesville Chamber of Commerce. There are also cards which contain information about each membership level.">
     <meta name="title" content="Home">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -28,7 +29,7 @@ Different levels have different perks including directory listings, publications
     <script src="scripts/navigation.js" defer></script>
 
     <script src="scripts/join.js" defer></script>
-    <title>Chamber Join Page</title>
+    <title>Join Jonesville Chamber of Commerce</title>
 </head>
 
 <body>
@@ -53,19 +54,20 @@ Different levels have different perks including directory listings, publications
             <form method="get" action="thankyou.html" class="joinForm">
                 <fieldset>
                     <legend>Your Information*</legend>
-                    <label>First Name <input autocomplete="given-name" type="text" name="first" id="first"
+                    <label>First Name <input autocomplete="given-name" type="text" name="first" id="first" title="first"
                             required></label>
-                    <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last"
+                    <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last" title="last"
                             required></label>
 
-                    <label>Email <input autocomplete="email" type="text" name="email" id="email" required
+                    <label>Email <input autocomplete="email" type="email" name="email" id="email" required
                             placeholder="email@address.com"></label>
-                    <label>Phone Number <input autocomplete="tel-area-code" type="text" name="phone" id="phone" required
+                    <label>Phone Number <input autocomplete="tel-area-code" type="tel" name="phone" id="phone" required
                             placeholder="000-123-4567"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>Organization Title: <input type="text" name="orgTitle" placeholder="DON'T FORGET"></label>
+                    <label>Organization Title: <input type="text" name="orgTitle" placeholder="Your Business"
+                            autocomplete="organization-title"></label>
                     <label>Description: <textarea type="textarea" name="busiDesc"></textarea></label>
                     <div class="radio">
                         <label>Membership Level:</label>

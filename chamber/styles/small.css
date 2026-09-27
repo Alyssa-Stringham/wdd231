@@ -269,7 +269,6 @@ h2 {
 .membership p {
     width: 80%;
     margin: 0 auto;
-
 }
 
 .membership button:hover {
@@ -279,7 +278,6 @@ h2 {
 
 .membership section {
     margin-bottom: 10px;
-
 }
 
 /*********FORM*********/
@@ -344,9 +342,6 @@ input[type="email"],
 
 /*********MODAL*********/
 /*should be below form */
-.membership {
-    display: flex;
-}
 
 .dialogHead {
     display: flex;
