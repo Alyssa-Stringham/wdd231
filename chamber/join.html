@@ -9,7 +9,7 @@ Different levels have different perks including directory listings, publications
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alyssa Stringham">
     <meta name="description"
-        content="This page contains a form for new members to join the Jonesville Chamber of Commerce. There are also cards which contain information about each membership level.">
+        content="This page contains a form for new members to join the Jonesville Chamber of Commerce. There are cards which contain information about each membership level.">
     <meta name="title" content="Home">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -59,16 +59,18 @@ Different levels have different perks including directory listings, publications
                     <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last" title="last"
                             required></label>
 
-                    <label>Email <input autocomplete="email" type="email" name="email" id="email" required
+                    <label>Email <input autocomplete="email" type="email" title="email" name="email" id="email" required
                             placeholder="email@address.com"></label>
-                    <label>Phone Number <input autocomplete="tel-area-code" type="tel" name="phone" id="phone" required
-                            placeholder="000-123-4567"></label>
+                    <label>Phone Number <input autocomplete="tel-area-code" title="phone" type="tel" name="phone"
+                            id="phone" required placeholder="000-123-4567"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>Organization Title: <input type="text" name="orgTitle" placeholder="Your Business"
-                            autocomplete="organization-title"></label>
-                    <label>Description: <textarea name="busiDesc"></textarea></label>
+                    <label>Organization Title: <input type="text" title="orgTitle" name="orgTitle"
+                            placeholder="Your Organization Title" autocomplete="organization-title"></label>
+                    <label>Organization Name: <input type="text" title="orgName" name="orgName"
+                            placeholder="Your Organization Name" autocomplete="organization"></label>
+                    <label>Description: <textarea title="busiDesc" name="busiDesc"></textarea></label>
                     <div class="radio">
                         <label>Membership Level:</label>
                         <label><input type="radio" name="membership" value="np">Non-Profit</label>
