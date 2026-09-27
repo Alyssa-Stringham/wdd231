@@ -30,6 +30,10 @@ const memberCost = document.querySelector('#memberCost');
 
 closeDialog.addEventListener("click", () => membershipDialog.close());
 
+document.getElementById('#joinForm').addEventListener('submit', function () {
+    document.getElementById('#timeStamp').value = Date.now();
+});
+
 createMembershipCard(membershipLevels);
 
 function createMembershipCard(levels) {
@@ -38,8 +42,6 @@ function createMembershipCard(levels) {
         let card = document.createElement("section");
         let membership = document.createElement("h3");
         let details = document.createElement("button");
-
-
 
         membership.textContent = level.level;
         details.textContent = 'Show Details';
@@ -50,8 +52,6 @@ function createMembershipCard(levels) {
         card.appendChild(details);
         showMembershipLevels.appendChild(card);
     })
-
-
 }
 
 function displayLevelBenefits(level) {
