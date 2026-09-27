@@ -68,7 +68,8 @@ Different levels have different perks including directory listings, publications
                     <legend>Business Information</legend>
                     <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters-->
                     <label>Organization Title: <input type="text" title="orgTitle" name="orgTitle"
-                            placeholder="Your Organization Title" autocomplete="organization-title"></label>
+                            placeholder="Your Organization Title" autocomplete="organization-title"
+                            pattern="[A-Za-z-]{7,}"></label>
                     <label>Organization Name: <input type="text" title="orgName" name="orgName"
                             placeholder="Your Organization Name" autocomplete="organization" required></label>
                     <label>Description: <textarea title="busiDesc" name="busiDesc"></textarea></label>
