@@ -30,7 +30,7 @@ const memberCost = document.querySelector('#memberCost');
 
 closeDialog.addEventListener("click", () => membershipDialog.close());
 
-document.getElementById('#joinForm').addEventListener('submit', function () {
+document.getElementById('joinForm').addEventListener('submit', function () {
     document.getElementById('#timeStamp').value = Date.now();
 });
 
