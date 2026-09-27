@@ -10,7 +10,7 @@ Different levels have different perks including directory listings, publications
     <meta name="author" content="Alyssa Stringham">
     <meta name="description"
         content="This page contains a form for new members to join the Jonesville Chamber of Commerce. There are cards which contain information about each membership level.">
-    <meta name="title" content="Home">
+    <meta name="title" content="Join Commerce">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -19,15 +19,12 @@ Different levels have different perks including directory listings, publications
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- META PROPERTY OG DESCRIPTION, TITLE, IMAGE, URL-->
     <meta property="og:title" content="Jonesville Commerce Join">
     <meta property="og:description"
         content="The join page for a commerce website for the fictional city of Jonesville, Utah">
     <meta property="og:image" content="https://alyssa-stringham.github.io/wdd231/chamber/join.html">
     <meta property="og:url" content="https://alyssa-stringham.github.io/wdd231/chamber/join.html">
-
     <script src="scripts/navigation.js" defer></script>
-
     <script src="scripts/join.js" defer></script>
     <title>Join Jonesville Chamber of Commerce</title>
 </head>
@@ -36,7 +33,7 @@ Different levels have different perks including directory listings, publications
     <header>
         <img src="favicon.ico" alt="site logo" height="32" width="32">
         <span>Jonesville Chamber of Commerce</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="navigation-button" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -69,7 +66,7 @@ Different levels have different perks including directory listings, publications
                     <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters-->
                     <label>Organization Title: <input type="text" title="orgTitle" name="orgTitle"
                             placeholder="Your Organization Title" autocomplete="organization-title"
-                            pattern="[A-Za-z-]{7,}"></label>
+                            pattern="^[A-Za-z \-]{7,}"></label>
                     <label>Organization Name: <input type="text" title="orgName" name="orgName"
                             placeholder="Your Organization Name" autocomplete="organization" required></label>
                     <label>Description: <textarea title="busiDesc" name="busiDesc"></textarea></label>

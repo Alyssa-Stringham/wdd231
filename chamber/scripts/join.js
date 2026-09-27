@@ -30,9 +30,11 @@ const memberCost = document.querySelector('#memberCost');
 
 closeDialog.addEventListener("click", () => membershipDialog.close());
 
-document.getElementById('joinForm').addEventListener('submit', function () {
-    document.getElementById('#timeStamp').value = Date.now();
-});
+//document.getElementById('joinForm').addEventListener('submit', function () {//
+// document.getElementById('#timeStamp').value = Date.now();
+//});
+
+document.getElementById('timeStamp').value = new Date().toLocaleString();
 
 createMembershipCard(membershipLevels);
 
