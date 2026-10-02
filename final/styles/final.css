@@ -1,0 +1,120 @@
+* {
+    --brown: #734f41;
+    --lightColor1: #fff8ec;
+    --lightColor2: #ffeeca;
+    --green: #35622e;
+    --darkGreen: #174513;
+    --veryDarkBrown: #371a0d;
+    --lightGreen: #67955d;
+    --veryLightGreen: #afdfa3;
+    color: var(--veryDarkBrown);
+    font-family: "Caudex", serif;
+}
+
+/********************HEADER********************/
+header {
+    background-color: var(--veryLightGreen);
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    align-items: end;
+    column-gap: 10px;
+}
+
+/********************NAVIGATION********************/
+.navigation {
+    display: none;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}
+
+/********************BODY********************/
+body {
+    background-color: var(--lightColor1)
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: var(--veryLightGreen);
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+/********************SITE PLAN********************/
+
+.siteplan img {
+    border: 5px solid var(--lightGreen);
+}
+
+.siteplan figure {
+    margin: 10px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.maintext {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/********************LARGE SCREEN********************/
+
+@media screen and (min-width:580px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: block;
+        width: 100%;
+    }
+
+    header span {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    /********************NAVIGATION********************/
+    .navigation {
+        display: block;
+        padding: 5px;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /********************SITE PLAN********************/
+    .siteplan img {
+        height: 500px;
+        width: auto;
+    }
+}

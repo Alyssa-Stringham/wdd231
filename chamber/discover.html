@@ -24,7 +24,7 @@ image montage will orient visitors to area and interesting area sites, etc.-->
     <meta property="og:url" content="https://alyssa-stringham.github.io/wdd231/chamber/directory.html">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <title>Jonesville Directory</title>
 </head>
 
@@ -42,7 +42,33 @@ image montage will orient visitors to area and interesting area sites, etc.-->
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <div id="activityList"></div>
+        <!--Small = 320px to 640px; Medium = 641px to 1024px; Large 1025px or larger-->
+        <!--Small stack everything; Medium picture on one side, info on other, cards stacked; Large has two columns-->
+        <!--Promotes the area in which your chamber of commerce is located
+            Purpose: provide factual and representitive information abou the area including demographics
+                    and features that appeals to prospective chamber members and visitors-->
+        <!--Use Grid-Template-Area to build responsive layout for small, medium, and large screens
+                add or modify CSS rules/ desclarations as needed; may add medium.css file with media query-->
+        <!--Choose 8 items of iterest in your area
+            Locate and resize a photo for each item of interest (around 300px wide by 200px tall; use WebP format)
+            Create or find a name, address, and description for each of the 8 items of interest in your area
+            Store information in JSON file with .mjs extension in "data" folder; include export statement
+            In head of page (when linking script), include type='module' to import information
+            Build 8 cards using h2 for title, figure tag for image, address tag for address, paragraph for description, button titled 'learn more'
+            Use named grid areas to layout cards differently for small/ medium/ large screens-->
+        <!--use local storage to store last vist date by client, display one of three possible messages about the time 
+            between page visits in content area
+                options include overlay or message area that can be closed, inline into the content area, or footer
+                First Visit: "Welcome! Let us know if you have any questions."
+                Less than one day since last visit: "Back so soon! Awesome!"
+                Otherwise, display number of days since last visit: "You last visited n days ago." if n<1 change days to day
+            Consider using localStorage object to store date of last visit to page (allows comparison of current date to last date
+            Storing current date using Date.now() lets date be stored in milliseconds-->
+        <!--Use CSS property effect whenever a user hovers over images in gallery with mouse; don't apply to images in mobile view-->
+        <!--Validate the links on entire chamber website and continue to improve all pages given feedback-->
+    </main>
     <footer>
         <div class="contact">
             <h3>City Chamber of Commerce</h3>

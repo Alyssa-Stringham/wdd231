@@ -174,9 +174,6 @@ section a {
     width: auto;
 }
 
-
-
-
 /********* HOME PAGE*********/
 
 .forecast {
@@ -379,4 +376,21 @@ input[type="email"],
 
 .dialogInfo li {
     margin-left: 20px;
+}
+
+/********************DISCOVER********************/
+
+#activityList section {
+    margin: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 6px;
+}
+
+#activityList section h3 {
+    margin: 10px;
+}
+
+
+#activityList section p {
+    margin: 10px;
 }
