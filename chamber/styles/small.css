@@ -431,3 +431,7 @@ input[type="email"],
     padding: 7px;
     grid-area: learnmore;
 }
+
+.fixValidation {
+    display: none;
+}
