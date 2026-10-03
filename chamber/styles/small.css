@@ -128,7 +128,6 @@ footer {
 
 section {
     border: 1px solid var(--primaryColor);
-    padding: 0.5rem;
     background-color: var(--lightColor);
 }
 
@@ -232,11 +231,12 @@ h2 {
 
 .hero {
     margin: 0;
-    max-width: 900px;
+    justify-self: center;
 }
 
 .hero img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;
 }
 
 .cta a {
@@ -380,17 +380,54 @@ input[type="email"],
 
 /********************DISCOVER********************/
 
-#activityList section {
+.activityList section {
     margin: 1rem;
-    border: 1px solid var(--primaryColor);
     border-radius: 6px;
+    display: grid;
+    overflow: hidden;
+    /*each line has set of quotes for each element on card
+        use your own variable names
+        just putting variable names in quotes doesn't change anything
+        assign grid area to each element
+        one word on each line means one column*/
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "learnmore"
+    ;
 }
 
-#activityList section h3 {
-    margin: 10px;
+.activityList h2 {
+    grid-area: name;
+    /*name is now at top above image*/
 }
 
+.activityList figure {
+    width: 100%;
+    margin: 0;
+    grid-area: photo;
+}
 
-#activityList section p {
-    margin: 10px;
+.activityList img {
+    width: 100%;
+    height: auto;
+}
+
+.activityList p {
+    white-space: pre-line;
+    grid-area: description;
+}
+
+.activityList address {
+    text-align: center;
+    grid-area: address;
+}
+
+.activityList button {
+    width: 33%;
+    margin: 10px auto;
+    padding: 7px;
+    grid-area: learnmore;
 }

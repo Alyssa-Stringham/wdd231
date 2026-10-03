@@ -1,0 +1,120 @@
+@media only screen and (min-width: 40rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 20px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--fontColor);
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        margin: 15px;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+        justify-self: left;
+    }
+
+    .forecast {
+        column-gap: 20px;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
+
+    .forecast div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 175px;
+        justify-content: center;
+    }
+
+    .forecast h3,
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Modal should be to right of form*/
+
+    .join {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 auto;
+    }
+
+    .join h1 {
+        grid-column: span 2;
+    }
+
+    .membership h2 {
+        border: none;
+    }
+
+    /*DISCOVERY*/
+    .activityList section {
+        /*two names on each line means two columns
+            repeat name for element to occupy multiple sections
+            need to have same number of columns in each row*/
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo address"
+            "photo learnmore"
+        ;
+    }
+
+    .activityList section figure {
+        width: 300px;
+    }
+
+    .activityList section img:hover {
+        box-shadow: 0 0 30px var(--primaryColor);
+    }
+
+    .activityList section p {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .activityList section address {
+        margin-top: 10px;
+    }
+
+    .activityList button {
+        width: 50%;
+    }
+
+    .activityList section h2 {
+        margin: 5px 10px;
+    }
+}

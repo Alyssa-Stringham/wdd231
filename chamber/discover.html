@@ -8,20 +8,22 @@ image montage will orient visitors to area and interesting area sites, etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alyssa Stringham">
     <meta name="description"
-        content="The directory page for the Chamber of Commerce project. Contains information for seven companies in Jonesville.">
+        content="The discovery page for the Chamber of Commerce project. Contains information for eight activities in Jonesville. Each activity has a name, location, description, picture, and price.">
     <meta name="title" content="Directory">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <meta property="og:description" content="A website for local companies in Jonesville, Utah - a fictional city">
-    <meta property="og:title" content="Jonesville Commerce Directory">
-    <meta property="og:image" content="https://alyssa-stringham.github.io/wdd231/chamber/directory.html">
-    <meta property="og:url" content="https://alyssa-stringham.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description"
+        content="A webpage displaying some activities in Jonesville, Utah - a fictional city. Each activity has a location, address, description, and picture.">
+    <meta property="og:title" content="Jonesville Commerce Discover Page">
+    <meta property="og:image" content="https://alyssa-stringham.github.io/wdd231/chamber/discover.html">
+    <meta property="og:url" content="https://alyssa-stringham.github.io/wdd231/chamber/discover.html">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/discover.js" type="module"></script>
@@ -30,7 +32,7 @@ image montage will orient visitors to area and interesting area sites, etc.-->
 
 <body>
     <header>
-        <img src="favicon.ico" alt="site logo" height="1" width="1">
+        <img src="favicon.ico" alt="site logo" height="32" width="32">
         <span>Jonesville Chamber of Commerce</span>
         <button id="navigation-button" class="hamburger"></button>
     </header>
@@ -43,14 +45,8 @@ image montage will orient visitors to area and interesting area sites, etc.-->
         </ul>
     </nav>
     <main>
-        <div id="activityList"></div>
-        <!--Small = 320px to 640px; Medium = 641px to 1024px; Large 1025px or larger-->
-        <!--Small stack everything; Medium picture on one side, info on other, cards stacked; Large has two columns-->
-        <!--Promotes the area in which your chamber of commerce is located
-            Purpose: provide factual and representitive information abou the area including demographics
-                    and features that appeals to prospective chamber members and visitors-->
-        <!--Use Grid-Template-Area to build responsive layout for small, medium, and large screens
-                add or modify CSS rules/ desclarations as needed; may add medium.css file with media query-->
+        <p id="visit" class="visit"></p>
+        <div id="activityList" class="activityList"></div>
         <!--Choose 8 items of iterest in your area
             Locate and resize a photo for each item of interest (around 300px wide by 200px tall; use WebP format)
             Create or find a name, address, and description for each of the 8 items of interest in your area
@@ -58,6 +54,7 @@ image montage will orient visitors to area and interesting area sites, etc.-->
             In head of page (when linking script), include type='module' to import information
             Build 8 cards using h2 for title, figure tag for image, address tag for address, paragraph for description, button titled 'learn more'
             Use named grid areas to layout cards differently for small/ medium/ large screens-->
+
         <!--use local storage to store last vist date by client, display one of three possible messages about the time 
             between page visits in content area
                 options include overlay or message area that can be closed, inline into the content area, or footer
