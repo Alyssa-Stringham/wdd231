@@ -112,6 +112,7 @@
 
     .activityList button {
         width: 50%;
+        height: 48px;
     }
 
     .activityList section h2 {
