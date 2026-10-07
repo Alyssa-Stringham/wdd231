@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <title>Facts and FAQs</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="logo" height="32" width="32">
+        <span>Equine Answers</span>
+        <button id="navigation-button" class="hamburger"></button>
+    </header>
+    <nav class="navigation" id="navigation-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="facts.html">Interesting Facts & Frequently Asked Questions</a></li>
+            <li><a href="breeds.html">Horse Breeds</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="interestingFacts">
+            <h2>Interesting Facts</h2>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3>How long do horses live?</h3>
+                <p>On average, horses live between 25 and 30 years.</p>
+            </div>
+            <div>
+                <h3>How much do horses cost?</h3>
+                <p>The purchase price of a horse can be anywhere from free to over a million dollars. Most horses are
+                    between $5,000 and $15,000.</p>
+            </div>
+            <div>
+                <h3>What is the difference between a horse and a pony?</h3>
+                <p>With the exception of a few breeds, horses are over 14.2hh (4 ft 10 in) and ponies are 14.1hh (4 ft 9
+                    in) or smaller</p>
+            </div>
+            <div>
+                <h3>When were horses domesticated?</h3>
+                <p>It is unknown exactly when horses were first domesticated and is therefore a subject of debate.
+                    However, it is generally agreed that horses were domesticated sometime between 3000BCE and 2200BCE.
+                </p>
+            </div>
+            <div>
+                <h3></h3>
+                <p></p>
+            </div>
+        </section>
+        <section class="askQuestion">
+            <h2>Submit a Question</h2>
+            <p>Have a question you want to ask? Fill out the form below.</p>
+            <form>
+                <fieldset>
+                    <legend>Your Information*</legend>
+                    <label>First Name <input autocomplete="given-name" type="text" name="first" id="first" title="first"
+                            required></label>
+                    <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last" title="last"
+                            required></label>
+                    <label>Email <input autocomplete="email" type="email" name="email" id="email" title="email"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Ask Your Question</legend>
+                    <label>Question Category</label>
+                    <div>
+                        <input type="radio" name="question" value="health"><label for="health">Health</label>
+                        <input type="radio" name="question" value="riding"><label for="riding">Riding</label>
+                        <input type="radio" name="question" value="training"><label for="training">Training</label>
+                        <input type="radio" name="question" value="behavior"><label for="behavior">Behavior</label>
+                        <input type="radio" name="question" value="breed"><label for="breed">Breed</label>
+                        <input type="radio" name="question" value="other"><label for="other">Other</label>
+                    </div>
+                    <label for="questionText">Write Your Question Here: </label><textarea id="questionText"
+                        name="questionText"></textarea>
+                </fieldset>
+                <input type="submit" value="Ask Question">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Resources</p>
+        </div>
+    </footer>
+</body>
+
+</html>

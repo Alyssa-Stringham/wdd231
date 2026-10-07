@@ -1,299 +1,340 @@
 {
     "breeds": [
         {
-            "breed": "Thoroughbred",
-            "subcategory": "Light",
-            "height": "15.2-17",
-            "weight": "900-1200",
-            "origin": "England",
-            "registry": "The Jockey Club",
-            "popularity": "1",
-            "facts": [
-                "second most popular horse in America with estimated population of 1.3 million"
+            "name": "Akhal-Teke",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Turkmenistan",
+                "US Registry: Akhal-Teke Association of America"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Arabian",
-            "subcategory": "Light",
-            "height": "14.1-15.1",
-            "weight": "800-1000",
-            "origin": "Arabian Peninsula",
-            "registry": "Arabian Horse Association",
-            "popularity": "2",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "American Quarter Horse",
-            "subcategory": "Stock",
-            "height": "14.3-16",
-            "weight": "950-1200",
-            "origin": "United States",
-            "registry": "American Quarter Horse Association",
-            "popularity": "3",
-            "facts": [
-                "most popular horse in America comprising of 42.1% of the total horse population",
-                "2.1 million estimated us population"
+            "stats": [
+                "Height: 14.2-16 hh",
+                "Weight: 900-1100 lbs"
             ],
-            "img": ""
+            "img": "images/akhal-teke.webp",
+            "type": "Light"
         },
         {
-            "breed": "Paint",
-            "subcategory": "Stock",
-            "height": "14.2-16",
-            "weight": "950-1200",
-            "origin": "United States",
-            "registry": "American Paint Horse Association",
-            "popularity": "4",
-            "facts": [
-                "third most popular horse in America"
+            "name": "American Paint Horse",
+            "info": [
+                "Subcategory: Stock",
+                "Origin: United States",
+                "US Registry: American Paint Horse Association"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Appaloosa",
-            "subcategory": "Stock",
-            "height": "14.2-16",
-            "weight": "950-1250",
-            "origin": "Western United States",
-            "registry": "Appaloosa Horse Club",
-            "popularity": "5",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Morgan",
-            "subcategory": "Light",
-            "height": "14.1-15.2",
-            "weight": "900-1100",
-            "origin": "Vermont, United States",
-            "registry": "American Morgan Horse Association",
-            "popularity": "6",
-            "facts": [
-                "oldest american horse breed"
+            "stats": [
+                "Height: 14.2-16 hh",
+                "Weight: 950-1200 lbs"
             ],
-            "img": ""
+            "img": "images/paint-horse.webp",
+            "type": "Stock"
         },
         {
-            "breed": "Tennessee Walking Horse",
-            "subcategory": "Light",
-            "height": "14.3-17",
-            "weight": "900-1200",
-            "origin": "Tennessee, United States",
-            "registry": "Tennessee Walking Horse Breeders' and Exhibitors' Association",
-            "popularity": "7",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Miniature Horse",
-            "subcategory": "Miniature",
-            "height": "up to 8.5",
-            "weight": "150-350",
-            "origin": "",
-            "registry": "American Miniature Horse Association",
-            "popularity": "8",
-            "facts": [
-                "cold blooded",
-                "origionally used as mine horse",
-                "two divisions: division a under 34 inches division b between 34 and 38 inches"
+            "name": "American Quarter Horse",
+            "info": [
+                "Subcategory: Stock",
+                "Origin: United States",
+                "US Registry: American Quarter Horse Association"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Shetland Pony",
-            "subcategory": "Pony",
-            "height": "up to 10.5",
-            "weight": "250-450",
-            "origin": "Scotland",
-            "registry": "American Shetland Pony Club",
-            "popularity": "9",
-            "facts": [
-                "first documented in 1603"
+            "stats": [
+                "Height: 14.3-16 hh",
+                "Weight: 950-1200 lbs"
             ],
-            "img": ""
+            "img": "images/quarter-horse.webp",
+            "type": "Stock"
         },
         {
-            "breed": "Welsh Pony",
-            "subcategory": "Pony",
-            "height": "11.2-15",
-            "weight": "400-1100",
-            "origin": "Wales",
-            "registry": "Welsh Pony & Cob Society of America",
-            "popularity": "10",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Friesian",
-            "subcategory": "Light CHECK",
-            "height": "15-17",
-            "weight": "1200-1600",
-            "origin": "Netherlands",
-            "registry": "Friesian Horse Association of North America",
-            "popularity": "11",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Andalusian",
-            "subcategory": "Light",
-            "height": "15-16.2",
-            "weight": "900-1100",
-            "origin": "Iberian Peninsula, Spain",
-            "registry": "International Andalusian & Lusitano Horse Association",
-            "popularity": "12",
-            "facts": [
-                "direct or indirect genetic influence on almost all breeds"
+            "name": "Andalusian",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Iberian Peninsula, Spain",
+                "US Registry: International Andalusian & Lusitano Horse Association"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Hanoverian",
-            "subcategory": "Warmblood",
-            "height": "15.3-17.2",
-            "weight": "1200-1500",
-            "origin": "Germany",
-            "registry": "American Hanoverian Society",
-            "popularity": "13",
-            "facts": [
-                "cremello, palomino, buckskin, excessively white not registerable"
+            "stats": [
+                "Height: 15-16.2",
+                "Weight: 900-1100 lbs"
             ],
-            "img": ""
+            "img": "images/andalusian.webp",
+            "type": "Light"
         },
         {
-            "breed": "Dutch Warmblood",
-            "subcategory": "Warmblood",
-            "height": "15.2-17",
-            "weight": "1200-1500",
-            "origin": "Netherlands",
-            "registry": "Koninklijk Warmbloed Paardenstamboek Nederland (KWPN)",
-            "popularity": "14",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Irish Draught",
-            "subcategory": "Draft",
-            "height": "15.1-16.3",
-            "weight": "1300-1500",
-            "origin": "Ireland",
-            "registry": "Irish Draught Horse Society of North America",
-            "popularity": "15",
-            "facts": [
-                "national horse of Ireland"
+            "name": "Appaloosa",
+            "info": [
+                "Subcategory: Stock",
+                "Origin: Western United States",
+                "US Registry: Appaloosa Horse Club"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Clydesdale",
-            "subcategory": "Draft",
-            "height": "16-18",
-            "weight": "1600-2400",
-            "origin": "Scotland",
-            "registry": "Clydesdale Breeders of the U.S.A.",
-            "popularity": "16",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Shire",
-            "subcategory": "Draft",
-            "height": "16-19",
-            "weight": "1800-2400",
-            "origin": "England",
-            "registry": "American Shire Horse Association",
-            "popularity": "17",
-            "facts": [
-                "2016 global population 1500"
+            "stats": [
+                "Height: 14.2-16",
+                "Weight: 950-1250 lbs"
             ],
-            "img": ""
+            "img": "images/appaloosa.webp",
+            "type": "Stock"
         },
         {
-            "breed": "Belgian Draft",
-            "subcategory": "Draft",
-            "height": "16-18",
-            "weight": "1500-2200",
-            "origin": "Belgium",
-            "registry": "Belgian Draft Horse Corporation of America",
-            "popularity": "18",
-            "facts": [
-                "Big Jake, Brooklyn Supreme"
+            "name": "Arabian",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Arabian Peninsula",
+                "US Registry: Arabian Horse Association"
             ],
-            "img": ""
-        },
-        {
-            "breed": "Percheron",
-            "subcategory": "Draft",
-            "height": "15-19",
-            "weight": "1100-2600",
-            "origin": "France",
-            "registry": "Percheron Horse Association of America",
-            "popularity": "19",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Standardbred",
-            "subcategory": "Light",
-            "height": "14-17",
-            "weight": "800-1000",
-            "origin": "United States",
-            "registry": "U.S. Trotting Association",
-            "popularity": "20",
-            "facts": [
-                "reword this later 'The breed was so named because the 'standard' needed the breeding stock to pace or trot a mile within 2 min and 30 sec.'",
-                "reword later 'The trotting and pacing movements in the Standardbreds are linked to their single-point mutation in DMRT3 gene.'"
+            "stats": [
+                "Height: 14.1-15.1 hh",
+                "Weight: 800-1000 lbs"
             ],
-            "img": ""
+            "img": "images/arabian.webp",
+            "type": "Light"
         },
         {
-            "breed": "Mustang",
-            "subcategory": "Other",
-            "height": "13-15",
-            "weight": "700-1000",
-            "origin": "United States",
-            "registry": "North American Mustang Association and Registry",
-            "popularity": "21",
-            "facts": [],
-            "img": ""
-        },
-        {
-            "breed": "Akhal-Teke",
-            "subcategory": "Light",
-            "height": "14.2-16",
-            "weight": "900-1100",
-            "origin": "Turkmenistan",
-            "registry": "Akhal-Teke Association of America",
-            "popularity": "22",
-            "facts": [
-                "believed to be one of oldest horse breeds",
-                "horses with cream gene have metallic sheen"
+            "name": "Belgian Draft",
+            "info": [
+                "Subcategory: Draft",
+                "Origin: Belgium",
+                "US Registry: Belgian Draft Horse Corporation of America"
             ],
-            "img": ""
+            "stats": [
+                "Height: 16-18 hh",
+                "Weight: 1500-2200 lbs"
+            ],
+            "img": "images/belgian.webp",
+            "type": "Draft"
         },
         {
-            "breed": "Lipizzan",
-            "subcategory": "Light",
-            "height": "14.2-16.1",
-            "weight": "950-1300",
-            "origin": "Austria",
-            "registry": "United States Lipizzan Federation",
-            "popularity": "23",
-            "facts": [],
-            "img": ""
+            "name": "Clydesdale",
+            "info": [
+                "Subcategory: Draft",
+                "Origin: Scotland",
+                "US Registry: Clydesdale Breeders of the U.S.A."
+            ],
+            "stats": [
+                "Height: 16-18 hh",
+                "Weight: 1600-2400 lbs"
+            ],
+            "img": "images/clydesdale.webp",
+            "type": "Draft"
         },
         {
-            "breed": "Haflinger",
-            "subcategory": "Pony",
-            "height": "13.2-15",
-            "weight": "800-1300",
-            "origin": "Austria/ Italy",
-            "registry": "American Haflinger Registry",
-            "popularity": "24",
-            "facts": [],
-            "img": ""
+            "name": "Dutch Warmblood",
+            "info": [
+                "Subcategory: Warmblood",
+                "Origin: Netherlands",
+                "Official Registry: Koninklijk Warmbloed Paardenstamboek Nederland (KWPN)"
+            ],
+            "stats": [
+                "Height: 15.2-17 hh",
+                "Weight: 1200-1500 lbs"
+            ],
+            "img": "images/dutch-warmblood.webp",
+            "type": "Warmblood"
+        },
+        {
+            "name": "Friesian",
+            "info": [
+                "Subcategory: Light Draft",
+                "Origin: Netherlands",
+                "US Registry: Friesian Horse Association of North America"
+            ],
+            "stats": [
+                "Height: 15-17",
+                "Weight: 1200-1600 lbs"
+            ],
+            "img": "images/friesian.webp",
+            "type": "Draft"
+        },
+        {
+            "name": "Haflinger",
+            "info": [
+                "Subcategory: Pony",
+                "Origin: Austria/ Italy",
+                "US Registry: American Haflinger Registry"
+            ],
+            "stats": [
+                "Height: 13.2-15 hh",
+                "Weight: 800-1300 lbs"
+            ],
+            "img": "images/haflinger.webp",
+            "type": "Pony"
+        },
+        {
+            "name": "Hanoverian",
+            "info": [
+                "Subcategory: Warmblood",
+                "Origin: Germany",
+                "US Registry: American Hanoverian Society"
+            ],
+            "stats": [
+                "Height: 15.3-17.2 hh",
+                "Weight: 1200-1500 lbs"
+            ],
+            "img": "images/hanoverian.webp",
+            "type": "Warmblood"
+        },
+        {
+            "name": "Irish Draught",
+            "info": [
+                "Subcategory: Draft",
+                "Origin: Ireland",
+                "US Registry: Irish Draught Horse Society of North America"
+            ],
+            "stats": [
+                "Height: 15.1-16.3 hh",
+                "Weight: 1300-1500 lbs"
+            ],
+            "img": "images/irish-draught.webp",
+            "type": "Draft"
+        },
+        {
+            "name": "Lipizzan",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Austria",
+                "US Registry: United States Lipizzan Federation"
+            ],
+            "stats": [
+                "Height: 14.2-16.1 hh",
+                "Weight: 950-1300 lbs"
+            ],
+            "img": "images/lipizzan.webp",
+            "type": "Light"
+        },
+        {
+            "name": "Miniature Horse",
+            "info": [
+                "Subcategory: Miniature",
+                "Origin: CHECK",
+                "US Registry: American Miniature Horse Association"
+            ],
+            "stats": [
+                "Height: up to 8.5 hh",
+                "Weight: 150-350 lbs"
+            ],
+            "img": "images/miniature-horse.webp",
+            "type": "Miniature"
+        },
+        {
+            "name": "Morgan",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Vermont, United States",
+                "US Registry: American Morgan Horse Association"
+            ],
+            "stats": [
+                "Height: 14.1-15.2",
+                "Weight: 900-1100 lbs"
+            ],
+            "img": "images/morgan.webp",
+            "type": "Light"
+        },
+        {
+            "name": "Mustang",
+            "info": [
+                "Subcategory: Light",
+                "Origin: United States",
+                "US Registry: North American Mustang Association and Registry"
+            ],
+            "stats": [
+                "Height: 13-15 hh",
+                "Weight: 700-1000 lbs"
+            ],
+            "img": "images/mustang.webp",
+            "type": "Light"
+        },
+        {
+            "name": "Percheron",
+            "info": [
+                "Subcategory: Draft",
+                "Origin: France",
+                "US Registry: Percheron Horse Association of America"
+            ],
+            "stats": [
+                "Height: 15-19 hh",
+                "Weight: 1100-2600 lbs"
+            ],
+            "img": "images/percheron.webp",
+            "type": "Draft"
+        },
+        {
+            "name": "Shetland Pony",
+            "info": [
+                "Subcategory: Pony",
+                "Origin: Scotland",
+                "US Registry: American Shetland Pony Club"
+            ],
+            "stats": [
+                "Height: up to 10.5 hh",
+                "Weight: 250-450 lbs"
+            ],
+            "img": "images/shetland-pony.webp",
+            "type": "Pony"
+        },
+        {
+            "name": "Shire",
+            "info": [
+                "Subcategory: Draft",
+                "Origin: England",
+                "US Registry: American Shire Horse Association"
+            ],
+            "stats": [
+                "Height: 16-19 hh",
+                "Weight: 1800-2400 lbs"
+            ],
+            "img": "images/shire.webp",
+            "type": "Draft"
+        },
+        {
+            "name": "Standardbred",
+            "info": [
+                "Subcategory: Light",
+                "Origin: United States",
+                "US Registry: U.S. Trotting Association"
+            ],
+            "stats": [
+                "Height: 14-17 hh",
+                "Weight: 800-1000 lbs"
+            ],
+            "img": "images/standardbred.webp",
+            "type": "Light"
+        },
+        {
+            "name": "Tennessee Walking Horse",
+            "info": [
+                "Subcategory: Light",
+                "Origin: Tennessee, United States",
+                "US Registry: Tennessee Walking Horse Breeders' and Exhibitors' Association"
+            ],
+            "stats": [
+                "Height: 14.3-17 hh",
+                "Weight: 900-1200 lbs"
+            ],
+            "img": "images/tennessee-walking.webp",
+            "type": "Light"
+        },
+        {
+            "name": "Thoroughbred",
+            "img": "images/thoroughbred.webp",
+            "info": [
+                "Subcategory: Light",
+                "Origin: England",
+                "US Registry: The Jockey Club"
+            ],
+            "stats": [
+                "Height: 15.2-17",
+                "Weight: 900-1200 lbs"
+            ],
+            "type": "Light"
+        },
+        {
+            "name": "Welsh Pony",
+            "info": [
+                "Subcategory: Pony",
+                "Origin: Wales",
+                "US Registry: Welsh Pony & Cob Society of America"
+            ],
+            "stats": [
+                "Height: 11.2-15 hh",
+                "Weight: 400-1100 lbs"
+            ],
+            "img": "images/welsh-pony.webp",
+            "type": "Pony"
         }
     ]
 }

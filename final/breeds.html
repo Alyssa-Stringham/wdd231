@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/breeds.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>Breeds</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="logo" height="32" width="32">
+        <span>Equine Answers</span>
+        <button id="navigation-button" class="hamburger"></button>
+    </header>
+    <nav class="navigation" id="navigation-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facts.html">Interesting Facts & Frequently Asked Questions</a></li>
+            <li class="current"><a href="breeds.html">Horse Breeds</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="breedsList">
+            <h1>Breeds</h1>
+            <p>Below are some of the most popular horse breeds. You may use the buttons to select which type of
+                horse
+                breed you see. Click on the horse image to see additional information about that horse breed. </p>
+            <div class="breedButtons">
+                <button id="allBreeds" class="allBreeds">All Breeds</button>
+                <button id="pony" class="pony">Pony and Miniature Breeds</button>
+                <button id="light" class="light">Light Horse Breeds</button>
+                <button id="stock" class="stock">Stock Horse Breeds</button>
+                <button id="warmblood" class="warmblood">Warmblood Breeds</button>
+                <button id="draft" class="draft">Draft Horse Breeds</button>
+            </div>
+
+            <div class="breedListDiv">
+                <p id="breedList" class="breedList"></p>
+            </div>
+
+        </section>
+        <dialog id="breedDialog">
+            <div class="dialogHead">
+                <h3 id="dialogHead"></h3>
+                <button id="closeDialog" class="close-button">X</button>
+            </div>
+            <div class="dialogInfo">
+                <img id="breedImg" height="200px" width="auto">
+                <p id="breedStats"></p>
+                <p id="breedInfo"></p>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Resources</p>
+        </div>
+
+        <!--Include attribution page link-->
+    </footer>
+</body>
+
+</html>

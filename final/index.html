@@ -4,26 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <title>Home</title>
 </head>
 
 <body>
     <header>
-        <!--SVG Logo-->
-        <span>Equine Enlightenment</span>
-        <!--Ham button-->
-        <nav class="navigation">
-            <ul>
-                <li class="current">Home</li>
-                <li>Interesting Facts & Frequently Asked Questions</li>
-                <li>Horse Breeds</li>
-            </ul>
-        </nav>
+        <img src="images/favicon.ico" alt="logo" height="32" width="32">
+        <span>Equine Answers</span>
+        <button id="navigation-button" class="hamburger"></button>
     </header>
+    <nav class="navigation" id="navigation-bar">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="facts.html">Interesting Facts & Frequently Asked Questions</a></li>
+            <li><a href="breeds.html">Horse Breeds</a></li>
+        </ul>
+    </nav>
     <main>
 
+        <section id="homeFact" class="homeFact"></section>
     </main>
     <footer>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Resources</p>
+        </div>
+
         <!--Include attribution page link-->
     </footer>
 </body>
