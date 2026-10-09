@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/navigation-dates.js" defer></script>
+    <script src="scripts/facts.js" defer></script>
     <title>Facts and FAQs</title>
 </head>
 
@@ -27,64 +28,93 @@
             <li><a href="breeds.html">Horse Breeds</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="interestingFacts">
-            <h2>Interesting Facts</h2>
-        </section>
+    <main class="faq">
+        <h1>Interesting Facts and Frequently Asked Questions</h1>
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
-            <div>
-                <h3>How long do horses live?</h3>
-                <p>On average, horses live between 25 and 30 years.</p>
-            </div>
-            <div>
-                <h3>How much do horses cost?</h3>
-                <p>The purchase price of a horse can be anywhere from free to over a million dollars. Most horses are
-                    between $5,000 and $15,000.</p>
-            </div>
-            <div>
-                <h3>What is the difference between a horse and a pony?</h3>
-                <p>With the exception of a few breeds, horses are over 14.2hh (4 ft 10 in) and ponies are 14.1hh (4 ft 9
-                    in) or smaller</p>
-            </div>
-            <div>
-                <h3>When were horses domesticated?</h3>
-                <p>It is unknown exactly when horses were first domesticated and is therefore a subject of debate.
-                    However, it is generally agreed that horses were domesticated sometime between 3000BCE and 2200BCE.
-                </p>
-            </div>
-            <div>
-                <h3></h3>
-                <p></p>
-            </div>
+
+            <h3>How long do horses live?</h3>
+            <p>On average, horses live between 25 and 30 years. The oldest horse on record was Old Billy, who lived
+                for
+                62 years (1760-1822). </p>
+            <h3>How much do horses cost?</h3>
+            <p>The purchase price of a horse can be anywhere from free to over a million dollars. Most horses are
+                between $5,000 and $15,000. The most expensive horse ever sold was a Thoroughbred named Fusaichi
+                Pegasus
+                who sold for $70 million.</p>
+            <h3>What is the difference between a horse and a pony?</h3>
+            <p>With the exception of a few breeds, horses are 14.2hh (4 ft 10 in) or taller and ponies are 14.1hh (4
+                ft
+                9
+                in) or smaller.</p>
+            <h3>When were horses domesticated?</h3>
+            <p>It is unknown exactly when horses were first domesticated and is therefore a subject of debate.
+                However, it is generally agreed that horses were domesticated sometime between 3000 BCE and 2200
+                BCE.
+                The
+                earliest recorded horse race took place in Greece during the 33rd Olympic Games of 648 BCE.
+            </p>
+            <h3>How high can horses jump?</h3>
+            <p>According to the FEI, the record for the highest cleared jump is 8 feet 1.25 inches. The longest
+                recorded
+                jump was 27 feet 6.75 inches.</p>
+            <h3>How fast are horses?</h3>
+            <p>The average horse has a top speed between 25 and 30 mph. The fastest horse ever recorded was a
+                Quarter
+                Horse named A Long Goodbye who reached a top speed of 55mph. </p>
+            <h3>How many bones do horses have?</h3>
+            <p>Most horses have 205 bones in their body; Arabian's only have 201 bones.</p>
+            <h3>What is the most popular horse breed in the United States? </h3>
+            <p>The Quarter Horse is the most popular horse breed in the United States with an estimated population
+                of
+                2.1 million horses - about 42% of the total US horse population</p>
+            <h3>How many horses live in the United States?</h3>
+            <p>According to the 2023 Economic Impact Study of the American Horse Council, there are about 6.65
+                million
+                horses in the United States. </p>
+
+
+        </section>
+        <section id="interestingFacts" class="interestingFacts">
+            <h2>Interesting Facts</h2>
+            <ul id="factsP"></ul>
         </section>
         <section class="askQuestion">
             <h2>Submit a Question</h2>
             <p>Have a question you want to ask? Fill out the form below.</p>
-            <form>
-                <fieldset>
-                    <legend>Your Information*</legend>
-                    <label>First Name <input autocomplete="given-name" type="text" name="first" id="first" title="first"
+            <form class="form">
+                <fieldset class="userInfo">
+                    <legend>Your Information</legend>
+                    <label>First Name* <input autocomplete="given-name" type="text" name="first" id="first"
+                            title="first" required></label>
+                    <label>Last Name* <input autocomplete="family-name" type="text" name="last" id="last" title="last"
                             required></label>
-                    <label>Last Name <input autocomplete="family-name" type="text" name="last" id="last" title="last"
+                    <label>Email* <input autocomplete="email" type="email" name="email" id="email" title="email"
                             required></label>
-                    <label>Email <input autocomplete="email" type="email" name="email" id="email" title="email"
-                            required></label>
+                    <label>Phone <input autocomplete="tel" type="tel" name="phone" id="phone" title="phone"></label>
                 </fieldset>
-                <fieldset>
-                    <legend>Ask Your Question</legend>
-                    <label>Question Category</label>
-                    <div>
-                        <input type="radio" name="question" value="health"><label for="health">Health</label>
-                        <input type="radio" name="question" value="riding"><label for="riding">Riding</label>
-                        <input type="radio" name="question" value="training"><label for="training">Training</label>
-                        <input type="radio" name="question" value="behavior"><label for="behavior">Behavior</label>
-                        <input type="radio" name="question" value="breed"><label for="breed">Breed</label>
-                        <input type="radio" name="question" value="other"><label for="other">Other</label>
-                    </div>
+                <fieldset class="userQuestion">
+                    <legend>Ask Your Question*</legend>
+                    <label for="question">Question Category</label>
+                    <select id="question" name="question" required>
+                        <option value="" selected disabled>Select a Question Category...</option>
+                        <option value="health">Health</option>
+                        <option value="riding">Riding</option>
+                        <option value="training">Training</option>
+                        <option value="behavior">Behavior</option>
+                        <option value="breed">Breed</option>
+                        <option value="other">Other</option>
+                    </select>
                     <label for="questionText">Write Your Question Here: </label><textarea id="questionText"
                         name="questionText"></textarea>
                 </fieldset>
+                <fieldset>
+                    <legend>Subscribe to Newsletter</legend>
+                    <label>Be the first to know when new content has been added to the website. </label>
+                    <label for="subscribe"><input type="checkbox" name="subscribe" id="subscribe" value="yes">Subscribe
+                        to Newsletter (optional)</label>
+                </fieldset>
+                <div>* Required Element or Section</div>
                 <input type="submit" value="Ask Question">
             </form>
         </section>

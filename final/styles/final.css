@@ -6,7 +6,7 @@
     --darkGreen: #174513;
     --veryDarkBrown: #371a0d;
     --lightGreen: #67955d;
-    --veryLightGreen: #afdfa3;
+    --veryLightGreen: #b0dfa4;
     color: var(--veryDarkBrown);
     font-family: "Caudex", serif;
 }
@@ -28,6 +28,7 @@ header img {
 header span {
     padding-bottom: 5px;
     font-size: larger;
+    color: var(--veryDarkBrown);
 }
 
 /********************NAVIGATION********************/
@@ -55,7 +56,7 @@ header span {
 
 .navigation.show {
     display: block;
-
+    border: 2px solid var(--darkGreen);
 }
 
 .navigation ul {
@@ -68,13 +69,42 @@ header span {
     text-decoration: none;
     display: block;
     padding: .75rem 10px;
-    border-bottom: 2px solid var(--darkGreen);
+    border-top: 2px solid var(--darkGreen);
+    color: var(--darkGreen);
+}
+
+/********************FOOTER********************/
+
+footer div {
+    background-color: var(--darkGreen);
+    justify-items: center;
+    padding: 10px;
+}
+
+footer div p,
+span,
+a {
+    color: var(--lightColor1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /********************BODY********************/
 body {
     background-color: var(--lightColor1)
 }
+
+/*
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: auto;
+    place-items: center;
+}*/
 
 h1 {
     text-align: center;
@@ -111,16 +141,83 @@ h2 {
     font-weight: 300;
 }
 
-/********************BREEDS********************/
-#breedsList img {
-    height: 200px;
+
+/********************HOME********************/
+.homePage img {
+    height: 300px;
     width: auto;
+    background-color: white;
+    border: 2px groove var(--darkGreen);
 }
 
-.breedButtons {
+/********************BREEDS********************/
+
+#breedsList img {
+    width: 100%;
+    height: auto;
+}
+
+#breedList {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+#breedList section {
+    border: 3px groove var(--darkGreen);
+    margin: 1rem;
+    box-shadow: 0 0 12px var(--darkGreen);
+}
+
+.close-button {
+    height: 44px;
+    width: 44px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 4px double var(--lightGreen);
+    background-color: var(--darkGreen);
+    color: var(--lightColor1);
+    font-size: larger;
+}
+
+.close-button:hover {
+    background-color: var(--lightGreen);
+    color: var(--veryDarkBrown);
+}
+
+#breedDialog {
+    background-color: var(--lightColor1);
+    border: 3px solid var(--darkGreen);
+}
+
+#breedDialog::backdrop {
+    background-color: rgba(255, 248, 236, 0.8)
+        /*  background-color: rgba(176, 223, 164, 0.6);*/
+}
+
+.dialogHead {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--darkGreen);
+}
+
+.dialogHead h3 {
+    color: var(--lightColor1);
+    margin-left: 20px;
+}
+
+
+.dialogInfo img {
+    border: 5px double var(--darkGreen);
+    margin-top: 5px;
+    display: flex;
+    justify-self: center;
+}
+
+.dialogInfo li {
+    list-style: none;
+    justify-self: center;
 }
 
 #breedsList button {
@@ -131,30 +228,95 @@ h2 {
     min-width: 80px
 }
 
+
 #breedsList button:hover {
     border: 3px double var(--veryLightGreen);
+    box-shadow: 0 0 8px var(--darkGreen);
 }
 
-.breedListDiv {
-    border: 2px solid var(--lightGreen);
-    max-width: 1200px;
+#breedsList div {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(350px 1fr));
-    gap: 15px;
-    margin: 0 auto;
-    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
 }
 
-#breedsList section {
-    border: 2px solid var(--darkGreen);
-    margin: 10px;
-    display: grid;
-    justify-self: center;
-    justify-items: center;
+/********************FACTS AND FAQ********************/
+
+
+/*****FAQ*****/
+
+.interestingFacts li {
+    list-style-type: "\2658";
+    padding-left: 5px;
+    margin-bottom: 10px;
 }
 
-.breedsList {
-    display: grid;
+.faq h3,
+p {
+    margin-left: 1rem;
+}
+
+/*****FORM*****/
+
+.form {
+    border: 5px double var(--darkGreen);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userQuestion {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label,
+legend,
+div {
+    display: block;
+    color: var(--darkGreen);
+}
+
+.form fieldset {
+    border: 1.25px solid var(--darkGreen);
+}
+
+.form input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--darkGreen);
+}
+
+.form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form input[type="submit"] {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--veryLightGreen);
+    color: var(--veryDarkBrown);
+    border: 2px outset var(--darkGreen);
+    box-shadow: 1px 1px 4px var(--darkGreen);
+}
+
+.form input[type="submit"]:hover {
+    background-color: var(--darkGreen);
+    color: var(--lightColor1);
+    border: 3px double var(--lightGreen);
+    box-shadow: none;
+}
+
+.form input:required {
+    border-left: 5px solid var(--darkGreen);
 }
 
 /****************************************MEDIUM SCREEN****************************************/
@@ -163,7 +325,7 @@ h2 {
     header {
         grid-template-columns: 30px auto;
         width: 100%;
-        border: 5px solid var(--darkGreen);
+        border: 3px solid var(--darkGreen);
     }
 
     header img {
@@ -225,7 +387,86 @@ h2 {
 
     /********************BREEDS********************/
     .breedButtons {
-        flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #breedsList img {
+        max-width: 300px;
+    }
+
+    #breedList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #breedList section:hover {
+        box-shadow: 0 0 1rem var(--green);
+        border: 3px groove var(--green);
+    }
+
+    /********************FAQ AND FACTS********************/
+
+    .faq {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .faq h1 {
+        grid-column: span 2;
+    }
+
+    .faq section {
+        margin: 10px;
+    }
+
+    #faq,
+    .interestingFacts {
+        border: 2px groove var(--green);
+    }
+
+    .faq section h3 {
+        margin: 10px;
+    }
+
+    .faq section p {
+        margin: 1rem;
+    }
+
+    .interestingFacts ul {
+        margin-right: 1rem;
+    }
+
+
+    .form {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+        padding: 10px;
+    }
+
+    .askQuestion {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .askQuestion h2,
+    .askQuestion p {
+        text-align: center;
+    }
+
+
+    /*
+
+    #breedsList div {
+        display: grid;
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    #breedsList div section {
+        grid-template-columns: 1fr;
+        max-width: 350px;
     }
 
     /****************************************LARGE SCREEN****************************************/
@@ -238,6 +479,10 @@ h2 {
         footer {
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        #breedList {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }

@@ -381,16 +381,17 @@ warmbloodBreeds.addEventListener("click", () => {
 
 
 function createBreedCard(filteredBreeds) {
-    document.querySelector('.breedList').innerHTML = "";
+    (showBreeds).innerHTML = ``;
     console.log(filteredBreeds);
     filteredBreeds.forEach(breed => {
         let card = document.createElement('section');
-        let breedName = document.createElement('h3');
+        let breedName = document.createElement('h2');
         let breedFig = document.createElement('figure');
         let breedImg = document.createElement('img');
 
         breedName.textContent = breed.name;
         breedImg.setAttribute('src', breed.img);
+        breedImg.setAttribute('alt', breed.name);
 
         breedFig.appendChild(breedImg);
         card.setAttribute('type', breed.type);
@@ -401,7 +402,6 @@ function createBreedCard(filteredBreeds) {
 
         card.addEventListener('click', () => displayBreedInfo(breed));
         showBreeds.appendChild(card);
-        document.querySelector('.breedList').appendChild(card);
     });
 }
 
@@ -423,5 +423,5 @@ function displayBreedInfo(breed) {
     });
     breedImg.setAttribute('src', breed.img);
     breedImg.setAttribute('loading', 'lazy');
-    breedImg.setAttribute('alt' `${breed.name}`);
+    breedImg.setAttribute('alt', `${breed.name}`);
 }

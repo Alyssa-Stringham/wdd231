@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="scripts/breeds.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/navigation-dates.js" defer></script>
     <title>Breeds</title>
 </head>
 
@@ -31,20 +31,22 @@
     <main>
         <section id="breedsList">
             <h1>Breeds</h1>
-            <p>Below are some of the most popular horse breeds. You may use the buttons to select which type of
+            <p>There are over 300 horse breeds throughout the world. Below are some of the most popular horse breeds.
+                You may use the
+                buttons to select which type of
                 horse
                 breed you see. Click on the horse image to see additional information about that horse breed. </p>
-            <div class="breedButtons">
+            <section class="breedButtons">
                 <button id="allBreeds" class="allBreeds">All Breeds</button>
                 <button id="pony" class="pony">Pony and Miniature Breeds</button>
                 <button id="light" class="light">Light Horse Breeds</button>
                 <button id="stock" class="stock">Stock Horse Breeds</button>
                 <button id="warmblood" class="warmblood">Warmblood Breeds</button>
                 <button id="draft" class="draft">Draft Horse Breeds</button>
-            </div>
+            </section>
 
-            <div class="breedListDiv">
-                <p id="breedList" class="breedList"></p>
+            <div>
+                <p id="breedList"></p>
             </div>
 
         </section>

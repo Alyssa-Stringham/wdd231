@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/navigation-dates.js" defer></script>
+    <script src="scripts/facts.js"></script>
     <title>Home</title>
 </head>
 
@@ -28,15 +29,25 @@
         </ul>
     </nav>
     <main>
+        <h1>Home</h1>
+        <section class="homePage">
+            <!--General Information about horses-->
+            <img src="images/horse-external.webp" alt="Horse External Anatomy">
+            <img src="images/horse-skeleton.webp" alt="Horse Skeleton">
+            <p></p>
+            <section class="homeFact">
+                <h2>Did you know...?</h2>
+                <p id="randomFact"></p>
+            </section>
+        </section>
 
-        <section id="homeFact" class="homeFact"></section>
     </main>
     <footer>
         <div>
             <p>WDD231 Final Project</p>
             <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
             <p>Last Modified: <span id="lastModified"></span></p>
-            <p>Resources</p>
+            <p><a href="resources.html" id="ref">Resources</a></p>
         </div>
 
         <!--Include attribution page link-->
