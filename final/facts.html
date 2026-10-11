@@ -24,17 +24,18 @@
     <nav class="navigation" id="navigation-bar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="facts.html">Interesting Facts & Frequently Asked Questions</a></li>
+            <li class="current"><a href="facts.html">Frequently Asked Questions & Interesting Facts</a></li>
             <li><a href="breeds.html">Horse Breeds</a></li>
         </ul>
     </nav>
     <main class="faq">
-        <h1>Interesting Facts and Frequently Asked Questions</h1>
+        <h1>Frequently Asked Questions and Interesting Facts</h1>
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
 
             <h3>How long do horses live?</h3>
-            <p>On average, horses live between 25 and 30 years. The oldest horse on record was Old Billy, who lived
+            <p>On average, horses live between 25 and 30 years. Generally speaking, smaller horses will live longer than
+                bigger horses on average. The oldest horse on record was Old Billy, who lived
                 for
                 62 years (1760-1822). </p>
             <h3>How much do horses cost?</h3>
@@ -46,10 +47,11 @@
             <p>With the exception of a few breeds, horses are 14.2hh (4 ft 10 in) or taller and ponies are 14.1hh (4
                 ft
                 9
-                in) or smaller.</p>
+                in) or smaller. Some exceptions include Welsh ponies which are always considered ponies and Arabians
+                which are always considered horses.</p>
             <h3>When were horses domesticated?</h3>
             <p>It is unknown exactly when horses were first domesticated and is therefore a subject of debate.
-                However, it is generally agreed that horses were domesticated sometime between 3000 BCE and 2200
+                However, it is generally agreed that horses were domesticated sometime between 4000 BCE and 2200
                 BCE.
                 The
                 earliest recorded horse race took place in Greece during the 33rd Olympic Games of 648 BCE.
@@ -82,7 +84,7 @@
         <section class="askQuestion">
             <h2>Submit a Question</h2>
             <p>Have a question you want to ask? Fill out the form below.</p>
-            <form class="form">
+            <form class="form" method="get" action="thankyou.html" id="form">
                 <fieldset class="userInfo">
                     <legend>Your Information</legend>
                     <label>First Name* <input autocomplete="given-name" type="text" name="first" id="first"
@@ -106,7 +108,7 @@
                         <option value="other">Other</option>
                     </select>
                     <label for="questionText">Write Your Question Here: </label><textarea id="questionText"
-                        name="questionText"></textarea>
+                        name="questionText" required></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Subscribe to Newsletter</legend>
@@ -125,7 +127,7 @@
             <p>WDD231 Final Project</p>
             <p>&copy; <span id="currentYear"></span> - Alyssa Stringham - Utah</p>
             <p>Last Modified: <span id="lastModified"></span></p>
-            <p>Resources</p>
+            <p><a href="resources.html" id="ref">Resources</a> &#9822 <a href="">Video Link</a></p>
         </div>
     </footer>
 </body>

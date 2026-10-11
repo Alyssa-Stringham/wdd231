@@ -5,7 +5,8 @@
     --green: #35622e;
     --darkGreen: #174513;
     --veryDarkBrown: #371a0d;
-    --lightGreen: #67955d;
+    --lightGreen: #3d6935;
+    --lightGreen1: #67955d;
     --veryLightGreen: #b0dfa4;
     color: var(--veryDarkBrown);
     font-family: "Caudex", serif;
@@ -13,7 +14,7 @@
 
 /********************HEADER********************/
 header {
-    background-color: var(--veryLightGreen);
+    background-color: var(--lightGreen);
     display: grid;
     grid-template-columns: 30px auto 60px;
     align-items: end;
@@ -28,7 +29,7 @@ header img {
 header span {
     padding-bottom: 5px;
     font-size: larger;
-    color: var(--veryDarkBrown);
+    color: var(--lightColor1);
 }
 
 /********************NAVIGATION********************/
@@ -111,9 +112,10 @@ h1 {
 }
 
 h2 {
-    background-color: var(--veryLightGreen);
+    background-color: var(--lightGreen);
     padding: 5px;
     font-size: 1.5rem;
+    color: var(--lightColor1);
 }
 
 /********************SITE PLAN********************/
@@ -144,11 +146,25 @@ h2 {
 
 /********************HOME********************/
 .homePage img {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 100%;
     background-color: white;
     border: 2px groove var(--darkGreen);
 }
+
+.homePage figcaption {
+    justify-self: center;
+}
+
+.homePage figure {
+    justify-self: center;
+}
+
+.homeFact {
+    border: 3px groove var(--darkGreen);
+    margin: 1rem;
+}
+
 
 /********************BREEDS********************/
 
@@ -182,12 +198,13 @@ h2 {
 
 .close-button:hover {
     background-color: var(--lightGreen);
-    color: var(--veryDarkBrown);
+    color: var(--lightColor1);
 }
 
 #breedDialog {
     background-color: var(--lightColor1);
     border: 3px solid var(--darkGreen);
+    width: 400px;
 }
 
 #breedDialog::backdrop {
@@ -319,6 +336,15 @@ input[type="tel"] {
     border-left: 5px solid var(--darkGreen);
 }
 
+/********************RESOURCES********************/
+.resources a {
+    color: var(--veryDarkBrown);
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
 /****************************************MEDIUM SCREEN****************************************/
 
 @media screen and (min-width:580px) {
@@ -374,7 +400,7 @@ input[type="tel"] {
     }
 
     .navigation li :hover {
-        border: 3px solid var(--veryLightGreen);
+        border: 3px solid var(--lightGreen);
         padding: 5px;
         text-decoration: underline;
     }
@@ -384,6 +410,48 @@ input[type="tel"] {
         height: 500px;
         width: auto;
     }
+
+
+    /********************HOME********************/
+
+
+    .homePage p {
+        margin: 1rem;
+    }
+
+    .homePage img {
+        max-width: 400px;
+    }
+
+    .img1 {
+        float: right;
+        margin-left: 5%;
+    }
+
+    .img2 {
+        float: left;
+        margin-right: 5%;
+    }
+
+    .homeFact {
+        width: 60%;
+        justify-self: center;
+        margin: 1.5rem;
+    }
+
+    /*.homePage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+    }
+
+
+    .homeFact {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+    }
+
 
     /********************BREEDS********************/
     .breedButtons {
@@ -483,6 +551,10 @@ input[type="tel"] {
 
         #breedList {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .homePage {
+            font-size: 1.25rem;
         }
     }
 }
