@@ -1,10 +1,213 @@
-@media only screen and (min-width:32rem) {
+/****************************************MEDIUM SCREEN****************************************/
+
+@media screen and (min-width:580px) {
+    header {
+        grid-template-columns: 30px auto;
+        width: 100%;
+        border: 3px solid var(--darkGreen);
+    }
+
+    header img {
+        padding-bottom: 10px;
+        padding-left: 5px;
+    }
+
+    header span {
+        display: flex;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    /********************NAVIGATION********************/
+    .navigation {
+        display: block;
+        padding: 5px;
+        background-color: var(--darkGreen);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation ul li a {
+        color: var(--lightColor1);
+        text-decoration: none;
+    }
+
     .hamburger {
         display: none;
     }
 
-    #breedsList img {
-        height: 200px;
+    .navigation .current a {
+        border: 3px double var(--veryLightGreen);
+        padding: 5px;
+    }
+
+    .navigation li :hover {
+        border: 3px solid var(--lightGreen);
+        padding: 5px;
+        text-decoration: underline;
+    }
+
+    /********************SITE PLAN********************/
+    .siteplan img {
+        height: 500px;
         width: auto;
+    }
+
+
+    /********************HOME********************/
+
+
+    .homePage p {
+        margin: 1rem;
+    }
+
+    .homePage img {
+        max-width: 400px;
+    }
+
+    .img1 {
+        float: right;
+        margin-left: 5%;
+    }
+
+    .img2 {
+        float: left;
+        margin-right: 5%;
+    }
+
+    .homeFact {
+        width: 60%;
+        justify-self: center;
+        margin: 1.5rem;
+    }
+
+    /*.homePage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+    }
+
+
+    .homeFact {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+    }
+
+
+    /********************BREEDS********************/
+    .breedButtons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #breedsList img {
+        max-width: 300px;
+    }
+
+    #breedList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #breedList section:hover {
+        box-shadow: 0 0 1rem var(--green);
+        border: 3px groove var(--green);
+    }
+
+    /********************FAQ AND FACTS********************/
+
+    .faq {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .faq h1 {
+        grid-column: span 2;
+    }
+
+    .faq section {
+        margin: 10px;
+    }
+
+    #faq,
+    .interestingFacts {
+        border: 2px groove var(--green);
+    }
+
+    .faq section h3 {
+        margin: 10px;
+    }
+
+    .faq section p {
+        margin: 1rem;
+    }
+
+    .interestingFacts ul {
+        margin-right: 1rem;
+    }
+
+
+    .form {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+        padding: 10px;
+    }
+
+    .askQuestion {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .askQuestion h2,
+    .askQuestion p {
+        text-align: center;
+    }
+
+
+    /*
+
+    #breedsList div {
+        display: grid;
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    #breedsList div section {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    /****************************************LARGE SCREEN****************************************/
+
+    @media screen and (min-width:64rem) {
+
+        header,
+        main,
+        nav,
+        footer {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #breedList {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .homePage {
+            font-size: 1.25rem;
+        }
     }
 }
