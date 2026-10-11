@@ -362,6 +362,8 @@ export function createBreedCard(filteredBreeds) {
         breedImg.setAttribute('src', breed.img);
         breedImg.setAttribute('alt', breed.name);
         breedImg.setAttribute('loading', 'lazy');
+        breedImg.setAttribute('height', 200);
+        breedImg.setAttribute('width', 'auto');
 
         breedFig.appendChild(breedImg);
         card.setAttribute('type', breed.type);
@@ -393,5 +395,7 @@ export function displayBreedInfo(breed) {
     });
     breedImg.setAttribute('src', breed.img);
     breedImg.setAttribute('loading', 'lazy');
+    breedImg.setAttribute('height', 200);
+    breedImg.setAttribute('width', 'auto');
     breedImg.setAttribute('alt', `${breed.name}`);
 }

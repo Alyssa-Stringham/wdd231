@@ -98,15 +98,6 @@ body {
     background-color: var(--lightColor1)
 }
 
-/*
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin: auto;
-    place-items: center;
-}*/
-
 h1 {
     text-align: center;
 }
