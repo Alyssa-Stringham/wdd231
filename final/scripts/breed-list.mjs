@@ -343,6 +343,7 @@ export default breedListInfo;
 
 const breedCards = document.querySelector('#breedsList');
 
+const breedPhoto = document.querySelector('#breedPhoto')
 const showBreeds = document.querySelector('#breedList');
 const breedDialog = document.querySelector('#breedDialog');
 const dialogTitle = document.querySelector('#dialogHead');
@@ -380,9 +381,12 @@ export function createBreedCard(filteredBreeds) {
 export function displayBreedInfo(breed) {
     breedDialog.showModal();
     dialogTitle.innerHTML = `${breed.name}`;
+    let breedImg = document.createElement('img');
 
+    breedPhoto.innerHTML = ``;
     breedInfo.innerHTML = ``;
     breedStats.innerHTML = ``;
+
     breed.info.forEach(data => {
         let breedData = document.createElement('li');
         breedData.innerHTML = data;
@@ -398,4 +402,5 @@ export function displayBreedInfo(breed) {
     breedImg.setAttribute('height', 200);
     breedImg.setAttribute('width', 'auto');
     breedImg.setAttribute('alt', `${breed.name}`);
-}
+    breedPhoto.appendChild(breedImg);
+}    
