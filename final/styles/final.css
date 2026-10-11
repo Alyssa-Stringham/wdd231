@@ -158,6 +158,9 @@ h2 {
 
 
 /********************BREEDS********************/
+.breedh2 {
+    display: none;
+}
 
 #breedsList img {
     width: 100%;
