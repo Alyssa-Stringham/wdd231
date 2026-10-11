@@ -1,4 +1,4 @@
-import breedListInfo from '/final/scripts/breed-list.mjs';
+import breedListInfo from './breed-list.mjs';
 import { createBreedCard } from './breed-list.mjs';
 
 closeDialog.addEventListener("click", () => breedDialog.close());
